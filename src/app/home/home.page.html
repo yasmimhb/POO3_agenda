@@ -14,6 +14,9 @@
     <ion-item>
       <ion-input label="Telefone" placeholder="Insira o telefone" [(ngModel)]="telefone" type="number"></ion-input>
     </ion-item>
+    <ion-item>
+      <ion-input label="Email" placeholder="Insira o email" [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
     <ion-button expand="block" (click)="cadastrar()">Enviar</ion-button>
   </ion-list>
 
@@ -24,6 +27,7 @@
     <ion-item>
       <ion-label>{{contato.nome}}</ion-label>
       <ion-label>{{contato.telefone}}</ion-label>
+      <ion-label>{{contato.email}}</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
